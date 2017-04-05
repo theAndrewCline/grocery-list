@@ -3,36 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Grocery List Maker</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
-  Add Meal
-  Title: <input class="js-new-title" type="text">
-  <button id = "addIngredientsBtn" type="button" class="add-ingredients">+</button>
-  <div id = "IngredientContainer">
-    <div class="ing-cont">
-      Ingredient: <input class="js-new-ingredient" type="text">
-      Needed: <input class="js-new-needed" type="number">
-      On Hand: <input class="js-new-onhand" type="number">
+<div class = "wrap">
+  <div class = "add-meal-box">
+    <h1> Add Meal </h1>
+    <div class="meal-title-box">
+      <h2>Title:</h2> <input class="js-new-title" type="text">
     </div>
-  </div>
+    <button id = "addIngredientsBtn" type="button" class="add-ingredients">+</button>
+    <div id = "IngredientContainer">
+      <div class="ing-cont">
+        <h2>Ingredient:</h2><input class="js-new-ingredient" type="text">
+        <h2>Needed:</h2> <input class="js-new-needed" type="number">
+        <h2>On Hand:</h2> <input class="js-new-onhand" type="number">
+      </div>
+    </div>
   <button class="js-add-meal">ADD IT!</button>
-  <div class="app">
+</div>
+  <div class="app"
 
   </div>
-
+</div>
   <script src="data.js"></script>
   <script src="add.js"></script>
   <script src="remove.js"></script>
   <script src="view.js"></script>
   <script src="app.js"></script>
-  <script>
-//   ingredients *
-//   multiple different meals *
-//   add meals, remove meals (same w/ ingredients)
-//   ingredients "on hand" *
 
-
-
-  </script>
 </body>
 </html>
