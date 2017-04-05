@@ -7,12 +7,14 @@
 <body>
   Add Meal
   Title: <input class="js-new-title" type="text">
-  <div class="ing-cont">
-    Ingredient: <input class="js-new-ingredient" type="text">
-    <button type="button" class="add-ingredients">+</button>
+  <button id = "addIngredientsBtn" type="button" class="add-ingredients">+</button>
+  <div id = "IngredientContainer">
+    <div class="ing-cont">
+      Ingredient: <input class="js-new-ingredient" type="text">
+      Needed: <input class="js-new-needed" type="number">
+      On Hand: <input class="js-new-onhand" type="number">
+    </div>
   </div>
-  Needed: <input class="js-new-needed" type="number">
-  On Hand: <input class="js-new-onhand" type="number">
   <button class="js-add-meal">ADD IT!</button>
   <div class="app">
 
