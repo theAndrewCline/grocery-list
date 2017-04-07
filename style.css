@@ -1,3 +1,6 @@
+body {
+  background-color: #E6EAE7;
+}
 h1 , h2 , h3 , li , button  {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -8,10 +11,13 @@ h1 {
 
 input {
   height: 35px;
+  width: 100%;
   border-radius: 5px;
-  font-size: 20px;
-  width: 50%;
+  border: 1px;
   box-sizing: border-box;
+  font-size: 1em;
+  padding: .6em;
+
 }
 
 button {
@@ -24,33 +30,36 @@ button {
 .wrap {
   height: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   margin: 20px;
 }
 
+.add-meal-box {
+  margin: 20px;
+  box-shadow: .25px .25px 2px #333;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 1.3em;
+  padding: 1.5em;
+}
+
+.meal-title-box {
+  display: inline-flex;
+  flex-direction: row;
+}
+
 .ing-cont {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   margin: 0px;
   padding: 20px;
 }
 
-.add-meal-box {
-  background-color: lightgray;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.meal-title-box {
-  display: flex;
-  flex-direction: row;
-}
 
 .ingredient-wrap , .needed-wrap , .onHand-wrap {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -59,6 +68,5 @@ button.add-ingredients {
   width: 35px;
   margin: 5px;
   color: #FFF;
-  
-  background-color: #04D75A;
+  background-color: #0DAD3B;
 }
