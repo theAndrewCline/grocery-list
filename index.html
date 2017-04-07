@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Grocery List Maker</title>
   <link rel = "stylesheet" type = "text/css" href = "style.css">
+  <link rel = "stylesheet" type = "text/css" href = "normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
@@ -13,12 +14,18 @@
     <div class="meal-title-box">
       <h2>Title:</h2> <input class="js-new-title" type="text">
     </div>
-    <button id = "addIngredientsBtn" type="button" class="add-ingredients">+</button>
     <div id = "IngredientContainer">
       <div class="ing-cont">
-        <h2>Ingredient:</h2><input class="js-new-ingredient" type="text">
-        <h2>Needed:</h2> <input class="js-new-needed" type="number">
-        <h2>On Hand:</h2> <input class="js-new-onhand" type="number">
+        <div class = "ingredient-wrap">
+          <h2>Ingredient:</h2><input class="js-new-ingredient" type="text">
+          <button id = "addIngredientsBtn" type="button" class="add-ingredients">+</button>
+        </div>
+        <div class = "needed-wrap">
+          <h2>Needed:</h2> <input class="js-new-needed" type="number">
+        </div>
+        <div class = "onHand-wrap">
+          <h2>On Hand:</h2> <input class="js-new-onhand" type="number">
+        </div>
       </div>
     </div>
   <button class="js-add-meal">ADD IT!</button>

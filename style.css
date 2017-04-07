@@ -2,36 +2,63 @@ h1 , h2 , h3 , li , button  {
   font-family: 'Noto Sans', sans-serif;
 }
 
+h1 {
+  margin: 20px;
+}
+
 input {
   height: 35px;
   border-radius: 5px;
   font-size: 20px;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 button {
   height: 35px;
   border-radius: 40px;
   border: none;
-  background-color: lightgreen;
-
+  background-color: #5AC1DC;
 }
 
 .wrap {
   height: 100%;
-  justify-content: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 20px;
 }
 
 .ing-cont {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 0px;
+  padding: 20px;
 }
 
 .add-meal-box {
   background-color: lightgray;
-  border-radius: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .meal-title-box {
   display: flex;
   flex-direction: row;
+}
+
+.ingredient-wrap , .needed-wrap , .onHand-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button.add-ingredients {
+  width: 35px;
+  margin: 5px;
+  color: #FFF;
+  
+  background-color: #04D75A;
 }
