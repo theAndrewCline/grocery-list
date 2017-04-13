@@ -4,69 +4,81 @@ body {
 h1 , h2 , h3 , li , button  {
   font-family: 'Noto Sans', sans-serif;
 }
-
-h1 {
-  margin: 20px;
+h2 {
+  font-size: 1em;
 }
-
 input {
-  height: 35px;
+  height: 2em;
   width: 100%;
   border-radius: 5px;
-  border: 1px;
+  border-color: #e0e0e0;
+  border-style: groove;
   box-sizing: border-box;
   font-size: 1em;
-  padding: .6em;
+  padding: 1em;
+  margin: 1em;
+}
 
+input:focus {
+  background-color: #DFEBF8;
+  outline: none;
 }
 
 button {
-  height: 35px;
   border-radius: 40px;
   border: none;
   background-color: #5AC1DC;
+  margin: 1em;
+  padding: 1em;
+  margin-top: 10px;
 }
 
 .wrap {
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   margin: 20px;
+  margin-right: auto;
 }
 
 .add-meal-box {
-  margin: 20px;
   box-shadow: .25px .25px 2px #333;
   background: #f5f5f5;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  margin-bottom: 1.3em;
+  margin: 1.3em;
   padding: 1.5em;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
 }
 
 .meal-title-box {
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .ing-cont {
   display: inline-flex;
   flex-direction: column;
-  margin: 0px;
-  padding: 20px;
+  align-content: center;
+  width: 100%;
 }
 
 
 .ingredient-wrap , .needed-wrap , .onHand-wrap {
   display: inline-flex;
   align-items: center;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
 button.add-ingredients {
-  width: 35px;
-  margin: 5px;
   color: #FFF;
   background-color: #0DAD3B;
+  margin-top: 1em;
+
 }

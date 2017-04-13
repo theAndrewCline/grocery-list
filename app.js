@@ -29,11 +29,18 @@ addMealBtn.onclick = () => {
 
   const IngredientContainer = document.querySelector('#IngredientContainer');
   IngredientContainer.innerHTML = `
-  <div class = "ing-cont">
-    Ingredient: <input class="js-new-ingredient" type="text">
-    Needed: <input class="js-new-needed" type="number">
-    On Hand: <input class="js-new-onhand" type="number">
-   </div>`;
+  <div class="ing-cont">
+    <div class = "ingredient-wrap">
+      <h2>Ingredient:</h2><input class="js-new-ingredient" type="text">
+    </div>
+    <div class = "needed-wrap">
+      <h2>Needed:</h2> <input class="js-new-needed" type="number">
+    </div>
+    <div class = "onHand-wrap">
+      <h2>On Hand:</h2> <input class="js-new-onhand" type="number">
+    </div>
+    <button id = "addIngredientsBtn" type="button" class="add-ingredients">Add Ingredient</button>
+  </div>`;
    newTitle.value = "";
 }
 
