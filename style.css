@@ -15,8 +15,7 @@ input {
   border-style: groove;
   box-sizing: border-box;
   font-size: 1em;
-  padding: 1em;
-  margin: 1em;
+  margin: 0.25em 0;
 }
 
 input:focus {
@@ -37,21 +36,69 @@ button {
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin: 20px;
-  margin-right: auto;
+}
+
+.meal {
+  background-color: white;
+  padding: 1em 2em;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
+  min-width: 17em;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0.5em;
+  border-radius: 10px;
+}
+
+.meal-ingredients > ul {
+  list-style: none;
+}
+.meal-ingredients > ul > li {
+  margin: 10px 0;
+}
+
+.meal__edit-btn {
+  background-color: #FFDE6C;
+}
+.meal__remove-btn {
+  background-color: #DD3420;
+}
+
+.meal-title {
+  font-size: 1.5em;
+  margin: 10px;
+  text-transform: uppercase;
 }
 
 .add-meal-box {
+  transition: 0.5s;
+  display: flex;
   box-shadow: .25px .25px 2px #333;
   background: #f5f5f5;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  margin: 1.3em;
+  margin: 0.5em;
   padding: 1.5em;
   width: 30em;
-  display: flex;
+  position: fixed;
+  top: 2em;
+  right: 2em;
   flex-direction: column;
+}
+
+.add-meal-box--hide {
+  transform: translateX(150%);
+}
+.add-meal-box--show {
+  transform: translateX(0);
+}
+
+.add-meal-btn {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
 }
 
 .meal-title-box {
@@ -59,6 +106,10 @@ button {
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
+}
+
+.meal-title-box > h2 {
+  margin: auto;
 }
 
 .ing-cont {

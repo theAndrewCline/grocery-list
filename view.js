@@ -11,26 +11,10 @@ function view(meals, container) {
       const name = meals[i].ingredients[j].name;
       const qtyNeeded = meals[i].ingredients[j].needed;
       const onhand = meals[i].ingredients[j].onhand;
-      ingString += `
-        <li>
-          ingredient: ${ name }<br />
-          recipe calls for: ${ qtyNeeded }<br />
-          we have: ${ onhand }
-        </li>
-      `;
+      ingString += ingredientTemplate(name, qtyNeeded, onhand);
     }
 
-    htmlString += `
-      <div class="meal">
-        <h2 class="meal-title">${ title }</h2>
-        <div class="meal-ingredients">
-          <ul>
-            ${ ingString }
-          </ul>
-        </div>
-        <button class="js-remove-meal">Remove Meal</button>
-      </div>
-    `;
+    htmlString += mealTemplate(title, ingString);
   }
 
   container.innerHTML = htmlString;
